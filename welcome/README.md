@@ -1,16 +1,31 @@
-# React + Vite
+Read Before You Start!
+1️⃣ Download starter code
+Before starting the course, please download the starter files and final code from the GitHub repo below
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚨 Please read the FAQ on GitHub! Believe me, you will ask some of these questions eventually 😉
 
-Currently, two official plugins are available:
+👉 Starter and final code and FAQs on GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2️⃣ Download course slides
+You can also download the course slide from the end of this lecture (theory-slides.pdf) 👇
+They will be helpful to review all important React concepts.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+3️⃣ Community & resources
+👉 We have a very friendly student community on Discord with 75,000+ students. This is where you learn together with other students just like you, and get updates on new courses. Join by clicking here!
+
+👉 Also check out my resources page (it contains design and development assets, tools, and resources)
+
+👋 Pro tip: Don't use lecture numbers when taking notes, because they will change each time I update something in the course.
+
+
+
+And now, have a lot of fun with the course! 😁
+
+Resources for this lecture
+
+https://github.com/jonasschmedtmann/ultimate-react-course
+
