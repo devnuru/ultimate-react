@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
 const pizzaData = [
   {
@@ -47,8 +47,6 @@ const pizzaData = [
   },
 ];
 
-
-
 function App() {
   return (
     <div className="app">
@@ -65,15 +63,15 @@ function Header() {
       <h1>Fast React Pizza Co.</h1>
     </header>
   );
-} 
+}
 
 function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza /> 
+      <Pizza pizza={pizzaData[0]} />
+      <Pizza pizza={pizzaData[1]} />
+      <Pizza pizza={pizzaData[2]} />
     </main>
   );
 }
@@ -90,43 +88,36 @@ function Footer() {
   const isOpen = hour >= openHour && hour <= closeHour;
   console.log(isOpen);
 
-
-
   return (
     <footer className="footer">
-      <p>{new Date().toLocaleTimeString()}We're currently open until 22:00. Come visit us or order online.</p>
+      <p>
+        {new Date().toLocaleTimeString()}We're currently open until 22:00. Come
+        visit us or order online.
+      </p>
     </footer>
   );
 }
 
 // function Test = () => {}
 
-function Pizza() {
+function Pizza(props) {
   return (
     <div>
-      <img src="pizzas/spinaci.jpg" alt="Pizza Spinaci" />
-      <h2>Pizza</h2>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-
+      <img src={props.pizza.photoName} alt={props.pizza.name} />
+      <h2>{props.pizza.name}</h2>
+      <p>{props.pizza.ingredients}</p>
     </div>
   );
 }
 
-
-
-  
-
-
 // Render the App component to the DOM
 // React v18 and earlier
-const root = ReactDOM.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);     
+);
 
 //React before 18
 // React.render(<App />)
-
-
