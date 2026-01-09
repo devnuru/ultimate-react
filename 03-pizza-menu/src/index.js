@@ -50,8 +50,37 @@ const pizzaData = [
 
 
 function App() {
-  return <h1>Pizza Menu !!! </h1>
+  return (
+    <div className="app">
+      <h1>Hello React</h1>
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  );
 }
+
+function Pizza() {
+  return (
+    <div>
+      <img src="pizzas/spinaci.jpg" alt="Pizza Spinaci" />
+      <h2>Pizza</h2>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+
+    </div>
+  );
+}
+
+
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>Fast React Pizza Co.</h1>
+    </header>
+  );
+}   
+
 
 // Render the App component to the DOM
 // React v18 and earlier
