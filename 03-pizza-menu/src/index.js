@@ -52,13 +52,41 @@ const pizzaData = [
 function App() {
   return (
     <div className="app">
-      <h1>Hello React</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 }
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>Fast React Pizza Co.</h1>
+    </header>
+  );
+} 
+
+function Menu() {
+  return (
+    <main className="menu">
+      <h2>Our Menu</h2>
+      <Pizza />
+      <Pizza />
+      <Pizza /> 
+    </main>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <p>{new Date().toLocaleTimeString()}We're currently open until 22:00. Come visit us or order online.</p>
+    </footer>
+  );
+}
+
+// function Test = () => {}
 
 function Pizza() {
   return (
@@ -73,13 +101,7 @@ function Pizza() {
 
 
 
-function Header() {
-  return (
-    <header className="header">
-      <h1>Fast React Pizza Co.</h1>
-    </header>
-  );
-}   
+  
 
 
 // Render the App component to the DOM
